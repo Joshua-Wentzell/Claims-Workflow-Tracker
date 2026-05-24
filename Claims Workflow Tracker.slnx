@@ -1,6 +1,14 @@
 <Solution>
+  <Folder Name="/database/">
+    <Project Path="database/ClaimsTracker.Database/ClaimsTracker.Database.sqlproj" Id="4f785cad-dd39-4c10-a56f-f538f6799b87">
+      <Build />
+      <Deploy />
+    </Project>
+  </Folder>
   <Folder Name="/Solution Items/">
     <File Path="README.md" />
   </Folder>
-  <Project Path="src/WebApi/WebApi.csproj" />
+  <Folder Name="/src/">
+    <Project Path="src/WebApi/ClaimsTracker.Api.csproj" />
+  </Folder>
 </Solution>
