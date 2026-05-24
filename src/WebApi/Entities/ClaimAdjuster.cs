@@ -8,5 +8,7 @@
         public string Email {  get; set; } = string.Empty;
         public DateTime HiredAt { get; set; }
         public bool IsActive { get; set; }
+
+        public ICollection<Claim> AssignedClaims { get; set; } = new List<Claim>();
     }
 }
