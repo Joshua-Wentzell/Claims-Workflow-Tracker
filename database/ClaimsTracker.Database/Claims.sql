@@ -22,4 +22,3 @@
 		FOREIGN KEY (AssignedAdjusterId)
 		REFERENCES ClaimAdjusters(Id)
 );
-GO

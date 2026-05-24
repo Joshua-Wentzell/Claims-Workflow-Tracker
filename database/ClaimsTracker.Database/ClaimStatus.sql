@@ -8,4 +8,4 @@
 
 	CONSTRAINT UQ_ClaimStatus_StatusName
 		UNIQUE (StatusName)
-)
+);

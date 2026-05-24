@@ -1,0 +1,15 @@
+﻿CREATE TABLE [dbo].[ClaimType]
+(
+	Id INT IDENTITY(1,1) NOT NULL,
+	TypeCode NVARCHAR(30) NOT NULL,
+	TypeName NVARCHAR(100) NOT NULL,
+
+	CONSTRAINT PK_ClaimType
+		PRIMARY KEY CLUSTERED (Id),
+
+	CONSTRAINT UQ_ClaimType_TypeCode
+		UNIQUE (TypeCode),
+
+	CONSTRAINT UQ_ClaimType_TypeName
+		UNIQUE (TypeName)
+);
