@@ -1,4 +1,5 @@
 <Solution>
+  <Folder Name="/build/" />
   <Folder Name="/database/">
     <Project Path="database/ClaimsTracker.Database/ClaimsTracker.Database.sqlproj" Id="4f785cad-dd39-4c10-a56f-f538f6799b87">
       <Build />
@@ -11,4 +12,5 @@
   <Folder Name="/src/">
     <Project Path="src/WebApi/ClaimsTracker.Api.csproj" />
   </Folder>
+  <Folder Name="/tests/" />
 </Solution>
