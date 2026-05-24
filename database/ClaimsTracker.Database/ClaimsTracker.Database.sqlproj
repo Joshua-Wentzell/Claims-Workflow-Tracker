@@ -62,5 +62,6 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Claims.sql" />
+    <Build Include="ClaimStatus.sql" />
   </ItemGroup>
 </Project>
