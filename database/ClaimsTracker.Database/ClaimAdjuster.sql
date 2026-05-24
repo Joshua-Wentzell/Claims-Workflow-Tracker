@@ -1,0 +1,14 @@
+﻿CREATE TABLE [dbo].[ClaimAdjuster]
+(
+	Id INT IDENTITY(1,1) NOT NULL,
+	FirstName NVARCHAR(100) NOT NULL,
+	LastName NVARCHAR(100) NOT NULL,
+	Email NVARCHAR(255) NOT NULL,
+	HiredAt DATETIME2(0) NOT NULL,
+
+	CONSTRAINT PK_ClaimAdjuster
+		PRIMARY KEY CLUSTERED (Id),
+
+	CONSTRAINT UQ_ClaimAdjuster_Email
+		UNIQUE (Email)
+);
