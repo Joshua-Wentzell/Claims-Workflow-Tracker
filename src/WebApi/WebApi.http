@@ -1,6 +1,19 @@
 @WebApi_HostAddress = http://localhost:5001
 
-GET {{WebApi_HostAddress}}/weatherforecast/
-Accept: application/json
+POST {{WebApi_HostAddress}}/api/claims
+Content-Type: application/json
+Accept: application/json,
+{
+  "statusId": 3,
+  "typeId": 3,
+  "assignedAdjusterId": null
+}
+###
 
+GET {{WebApi_HostAddress}}/api/claims
+Accept: appication/json
+###
+
+GET {{WebApi_HostAddress}}/api/claims/2
+Accept: appication/json
 ###

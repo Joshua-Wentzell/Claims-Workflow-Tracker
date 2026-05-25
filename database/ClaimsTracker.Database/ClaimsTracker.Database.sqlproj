@@ -56,14 +56,21 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Scripts" />
+    <Folder Include="Tables" />
   </ItemGroup>
   <ItemGroup>
     <None Include="localdb.publish.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Claim.sql" />
-    <Build Include="ClaimStatus.sql" />
-    <Build Include="ClaimType.sql" />
-    <Build Include="ClaimAdjuster.sql" />
+    <PostDeploy Include="Scripts\PostDeployment.sql" />
+    <None Include="Scripts\SeedClaimStatus.sql" />
+    <None Include="Scripts\SeedClaimType.sql" />
+    <Build Include="Tables\Claim.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\ClaimAdjuster.sql" />
+    <Build Include="Tables\ClaimStatus.sql" />
+    <Build Include="Tables\ClaimType.sql" />
   </ItemGroup>
 </Project>
